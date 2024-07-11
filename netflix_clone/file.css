@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.line{
+    height: 10px;
+    color: rgb(196, 24, 24);
+    position: relative;
+    z-index: 20;
+}
+
+main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/20a59be7-7062-4991-bca0-805e9a7f2716/IN-en-20240107-trifectadaily-perspective_alpha_website_small.jpg);
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    background-position: center center;
+    position: relative;
+}
+
+main .box{
+    height: 644px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+}
+
+.top {
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 140px;
+    display: inline-block;
+    position: relative;
+    padding-left: 150px;
+}
+
+.side :first-child {
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: rgba(15, 15, 15, 0.5);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.side span {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    align-content: center;
+    position: relative;
+}
+
+main span:hover {
+    background-color: rgb(206, 7, 7);
+    pointer-events: link;
+}
+
+.top{
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.top button{
+    background-color: red;
+    color: white;
+    padding: 7px 24px;
+    border-radius: 4px;
+}
+
+.top input{
+    padding: 7px 24px;
+    border-radius: 4px;
+    background-color: rgba(23,23, 23 ,0.2);
+    border-radius:  rgba(23,23, 23 ,0.2);
+    color: white;
+
+}
+
+.second h1,h3{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    font-weight: bolder;
+}
+
+.sec{
+    position: relative;
+}
+
+.second {
+    background-color: rgb(7, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 50vw;
+}
+
+.sec img {
+    position: absolute;
+    z-index: 10;
+    width: 555px;
+}
+
+.sec video{
+    top: 4px;
+    right: 0;
+    width: 550px;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.third {
+    background-color: rgb(7, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.third img{
+    width: 600px;
+    height: 600px;
+
+}
+
+.third h1{
+    font-size:80px;
+    font-weight: bolder;
+}
+
+.forth {
+    background-color: rgb(7, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.forth div {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+/* .for {
+    position: relative;
+}
+
+.for img{
+    position: absolute;
+    z-index: 10;
+    width: 555px;
+}
+
+.for video{
+    top: 4px;
+    right: 0;
+    width: 550px;
+    position: absolute;
+} */
+
+.fifth {
+    background-color: rgb(7, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.fifth h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.fifth h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.fifth div {
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq {
+    background-color: rgb(7, 0, 0);
+    color: white;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+}
+
+.faq h1 {
+    color: white;
+    text-align: center;
+}
+
+.faq{
+    padding: 34px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+.faqbox{
+    font-size: 24px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 5px ;
+    padding: 24px;
+    background-color: rgb(36, 35, 35);
+    transition: all 1s ease-out
+}
+
+.faq :hover{
+    background-color: rgb(126, 122, 122);
+    color: white;
+}
+
+.faq svg{
+    filter: invert(1);
+}
