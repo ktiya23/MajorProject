@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url('./Chomsky-8MOa2.otf') format('opentype');
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+hr {
+    height: 10px;
+    background-color: rgba(13, 91, 70, 0.599);
+}
+
+h2 {
+    font-size: 60px;
+    color: brown;
+    text-shadow: 5px 5px 5px rgb(8, 8, 8);
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: italic;
+    color: #473E66;
+    animation: fade 4s ease-in infinite;
+}
+
+@keyframes fade {
+    0% {
+        color: #473E66;
+    }
+
+    50% {
+        color: #036d79;
+    }
+
+    100% {
+        color: #473E66;
+    }
+}
+
+.circle {
+    border: 10px solid rgb(0, 15, 2);
+    border-top: 10px solid rgb(23, 176, 187);
+    border-bottom: 10px solid rgb(23, 176, 187);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    color: aqua;
+    font-size: larger;
+    overflow-y: hidden;
+    height: 0px;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    animation: slide 10s linear;
+    background-image: url(https://th.bing.com/th?id=OIP.a6gt0WskngpFILo6ZNitCQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+    background-color: rgba(25, 25, 25, 0.8);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: max(1200px, 100vw);
+
+}
+
+.loader h1 {
+    color: rgb(254, 254, 254);
+    font-size: 80px;
+    text-shadow: 5px 5px 5px #cb6060;
+}
+
+@keyframes slide {
+    0% {
+        height: 100vh;
+    }
+}
+
+.main {
+    top: 100%;
+    position: relative;
+    background: linear-gradient(360deg, #522B5B, #C38EB4, #26425A);
+    height: 100%;
+    cursor: url("mainl.png"), auto;
+}
+
+.main>h1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: rgb(218, 181, 181);
+    font-size: 90px;
+    font-family: 'Chomsky';
+    font-weight: lighter;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(20, 20, 20, 80);
+}
+
+.intro {
+    margin: 20px;
+}
+
+.intro>div {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.intro>div>img {
+    flex-basis: 40%
+}
+
+.intro>div>h4 {
+    font-size: 30px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.gallery {
+    margin: 20px;
+}
+
+.gallery>div {
+    display: flex;
+    height: 300px;
+    width: 40%;
+    gap: 20px;
+}
+
+.gallery img {
+    height: 100%;
+    width: 10%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(6, 0, 0);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    width: 100%;
+}
+
+.movie {
+    margin: 20px;
+}
+
+.movie,
+.role {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+}
+
+.movie img {
+    box-shadow: 5px 5px 15px rgb(255, 255, 255, 0.2);
+    height: 200px;
+    width: 200px;
+    transition: ease-in-out;
+    border: 10px solid #fbfcfc;
+    box-shadow: 8px 8px 20px black;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.card h2 {
+    font-size: 25px;
+    color: #151114;
+
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.card:hover .container {
+    transform: rotateY(180deg);
+}
+
+.face {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #b47474;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C38EB4;
+    border-radius: 10px;
+  }
+  
+::-webkit-scrollbar-thumb:hover{
+    background: #cb6060;
+}
+/* small screen */
+@media screen and (min-width:10px) and (max-width:720px) {
+    .movie, .role{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    .main>h1{
+        font-size: 40px;
+    }
+    .intro>div>h4 {
+        font-size: 20px;}
+}
+
+/* medium screen */
+@media screen and (min-width:721px) and (max-width:1024px) {
+    .movie , .role {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+    .main>h1{
+        font-size: 60px;
+    }
+    .intro>div>h4 {
+        font-size: 25px;}
+}
+
+/* large screen */
+@media screen and (min-width:1025px) {
+    .movie, .role {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+    .main>h1{
+        font-size: 90px;
+    }
+}
