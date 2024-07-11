@@ -1,0 +1,283 @@
+body{
+    margin: 40px;
+    padding: 10px;
+    background-color: rgb(250, 249, 248);
+}
+.navbar>nav{
+    display: flex;
+}
+.left{
+    display: flex;
+    float: left;
+    gap: 20px;
+}
+.left>a{
+    text-decoration-line: none;
+    color: black;
+    font-size: larger;    
+}
+.left>a:nth-child(4){
+    margin-top: 5px;
+
+}
+.left>a:nth-child(4):hover{
+    color: red;
+}
+.middle{
+    margin-left: 450px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size:larger;
+    float: right;
+    margin-left: 300px;
+}
+#menuBar{
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    position: absolute;
+    top: 77px;
+    left: 390px;
+    border: 1px solid white;
+    font-size: large;
+}
+
+.menu>div{
+    display: flex;
+    margin-left: 400px;
+}
+.menu>div>ul{
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.menu>div>ul:hover{
+    text-decoration: underline;
+}
+.search{
+    float: right;
+    margin-top: -40px;
+}
+.menu>div:nth-child(3){
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+    color: rgb(35, 35, 35);
+}
+
+.poster{
+    background: url(banner-bg-01\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 12rem;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 10px;
+}
+.poster>div>h3{
+    font-size:x-large;
+}
+.poster>div>p{
+    font-size:large;
+}
+.poster>div>button{
+    font-size: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.poster>div>button:hover{
+    background-color:  #444444;
+}
+.image{
+    height: 12rem;
+    width: 70%;
+    margin: 2rem auto;
+    position: relative;
+}
+.image>div{
+    background-color: rgba(27, 27, 27, 0.795);
+    color: white;
+    height: 101px;
+    width: 22%;
+    margin-left: 45px;
+    padding-left: 10px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -425px;
+    font-size: large;
+}
+.image>h1{
+    color: white;
+    position: absolute;
+    margin-left: 453px;
+    margin-top: -192px;
+    font-size: 43px
+}
+.image>button{
+    position: absolute;
+    margin-left: 589px;
+    margin-top: -127px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.image>button:hover{
+    cursor: pointer;
+    background-color: rgb(203, 200, 200);
+}
+.image2{
+    height: 12rem;
+    width: 70%;
+    margin: 2rem auto;
+    margin-top: 637px;
+}
+.image2>img{
+    height: 52rem;
+    width: 104%;
+    position: relative;
+}
+.image2>div{
+    color: white;
+    font-size: large;
+    padding-left: 10px;
+    position: absolute;
+    text-align: center;
+    margin-left: 442px;
+    margin-top: -296px;
+}
+
+.image2>div>h5{
+    font-size: x-large;
+}
+.image2>div>h1{
+    font-size: 40px;
+}
+.image2>div>p{
+    font-size: 20px;
+}
+.image2>div>button{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.image2>div>button:hover{
+    cursor: pointer;
+    background-color: rgb(203, 200, 200);
+}
+.image3{
+    background: url("https://image.hm.com/content/dam/global_campaigns/season_09/kids/4060h/4060H-3x2-seasonal-classics-2-8-y.jpg?imwidth=768");
+    background-size: cover;
+    position: relative;
+    width: 73%;
+    margin: 2rem auto;
+    height: 95vh;
+    margin-top: 671px;
+    margin-left: 270px;
+}
+.image3>div{
+    background-color: rgba(27, 27, 27, 0.795);
+    color: white;
+    height: 101px;
+    width: 22%;
+    margin-left: 82px;
+    padding-left: 10px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 508px;
+    font-size: large;
+}
+.image3>h1{
+    color: white;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 610px;
+    font-size: 59px;
+    text-align: center;
+}
+#button>button{
+    position: absolute;
+    margin-left: 577px;
+    margin-top: 186px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    height: max-content;
+    width: 40%;
+}
+.poster2{
+    background: url("https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_09/beauty/7929/7929-banner-3x1-campaignpage-2.jpg]&scale=size[960]&sink=format[jpeg],quality[80]");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 12rem;
+    width: 74%;
+}
+.image4>div{
+    width: 26%;
+    margin-left: 233px;
+    border-radius: 4px;
+    margin-top: -760px
+}
+footer{
+    background-color: #E4E4E4;
+    text-align: center;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin-top: 650px;
+    font-size: larger;
+    position: relative;
+}
+
+
+
+.slider>div>button{
+    background-color: white;
+    border-radius: 50px;
+    font-size: larger;
+    padding: 10px;
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2px;
+    row-gap: 5px;
+}
+.photo>div>li{
+    list-style: none;
+}
+.photo>div{
+    position: relative;
+    
+}
+.hidden {
+    display: none;
+  }
+.heart{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 220px;
+}
+.heart:hover{
+    /* background-color: red; */
+}
